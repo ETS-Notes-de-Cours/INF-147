@@ -1,11 +1,10 @@
 #include<stdio.h>
 #include<string.h>
 
-unsigned int test = 1; 
-
-
+unsigned int testCase = 1;
+ 
 int main() {
-    switch(test){
+    switch(testCase){
         case 0 :
             printf("Hello World")
             break
@@ -25,6 +24,12 @@ int main() {
         case 3 :
             unsigned int number = 465;
             printf("%i + %u = %d", number/2, number/2, number);
+            break;
+
+        case 4 :
+            float decimals = 3.50
+            printf("Floating point printing : %2.5f", decimals);
+            break;
     }
     
 }
