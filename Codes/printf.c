@@ -21,6 +21,10 @@ int main() {
                 printf("%c",string[i]);
             }
             break;
+        
+        case 3 :
+            unsigned int number = 465;
+            printf("%i + %u = %d", number/2, number/2, number);
     }
     
 }
