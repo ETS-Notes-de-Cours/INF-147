@@ -86,6 +86,50 @@ int main() {
         break;
       
       case 6 :
+        float kgCiment, kgSable, kgGravier;
+        float volumeMaximal, volumeCiment, volumeSable, volumeGravier;
+
+        printf("\n\rEntrez la quantité de ciment (en kg) : ");
+        scanf("%f", &kgCiment);
+
+        printf("\n\rEntrez la quantité de sable (en kg) : ");
+        scanf("%f", &kgSable);
+
+        printf("\n\rEntrez la quantité de gravier (en kg) : ");
+        scanf("%f", &kgGravier);
+
+        volumeCiment = (float)kgCiment / 350.0;
+        volumeSable = (float)kgSable / 680.0;
+        volumeGravier = (float)kgGravier / 1175.0;
+
+        volumeMaximal = volumeCiment;
+        if (volumeSable < volumeMaximal) {
+            volumeMaximal = volumeSable;
+        }
+        if (volumeGravier < volumeMaximal) {
+            volumeMaximal = volumeGravier;
+        }
+
+        printf("\n\rLe volume maximal de béton produit est : %.2f m^3", volumeMaximal);
+
+        float resteCiment = kgCiment - (volumeMaximal * 350);
+        float resteSable = kgSable - (volumeMaximal * 680);
+        float resteGravier = kgGravier - (volumeMaximal * 1175);
+
+        if (resteCiment > 0 || resteSable > 0 || resteGravier > 0) {
+            printf("\n\rQuantités restantes :");
+            if (resteCiment > 0) {
+                printf("\n\rCiment : %.2f kg", resteCiment);
+            }
+            if (resteSable > 0) {
+                printf("\n\rSable : %.2f kg", resteSable);
+            }
+            if (resteGravier > 0) {
+                printf("\n\rGravier : %.2f kg", resteGravier);
+            }
+        } else {
+            printf("\n\rAucun matériau restant.");
+        }
         break;
       
       case 7 :
