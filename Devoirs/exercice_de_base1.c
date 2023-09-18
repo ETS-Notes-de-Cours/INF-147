@@ -27,26 +27,24 @@ int main() {
       
       case 2 :
         #define pourcent_tax 0.14975
-
-       float pProduit, pAvantTaxe, Taxe, Total;
-       int  quantite_v;
+          
+        float pProduit, pAvantTaxe, Taxe, Total;
+        int  quantite_v;
    
-       printf("\n\rEntrez le prix du produit : ");
-       scanf("%f", &pProduit);
+        printf("\n\rEntrez le prix du produit : ");
+        scanf("%f", &pProduit);
    
-       printf("\n\rEntrez le nombre de produits acheté : ");
-       scanf("%d", &quantite_v);
+        printf("\n\rEntrez le nombre de produits acheté : ");
+        scanf("%d", &quantite_v);
    
-       pAvantTaxe = pProduit * quantite_v;
+        pAvantTaxe = pProduit * quantite_v;
+        Taxe = pAvantTaxe * pourcent_tax; 
+        Total = Taxe + pAvantTaxe;
    
-       Taxe = pAvantTaxe * pourcent_tax; 
-   
-       Total = Taxe + pAvantTaxe;
-   
-       printf("\n\rLe prix avant taxe est : %f ", pAvantTaxe);
-       printf("\n\rLa taxe est : %f ", Taxe);
-       printf("\n\rLe prix total est : %f ", Total);
-       break;
+        printf("\n\rLe prix avant taxe est : %f ", pAvantTaxe);
+        printf("\n\rLa taxe est : %f ", Taxe);
+        printf("\n\rLe prix total est : %f ", Total);
+        break;
       
       case 3 :
         break;
