@@ -73,6 +73,16 @@ int main() {
         break;
       
       case 5 :
+        int durreeSecondes;
+        printf(" Choisissez une duree en secondes : ");
+        scanf("%d", &durreeSecondes);
+
+        heures = dureeEnSecondes / 3600; // Une heure a 3600 secondes
+        dureeEnSecondes %= 3600;
+        minutes = dureeEnSecondes / 60; // Une minute a 60 secondes
+        secondes = dureeEnSecondes % 60; 
+
+        printf("\n\r Vous avez choisi une duree de : %d heures, %d minutes et %d secondes ", heures, minutes, secondes);
         break;
       
       case 6 :
