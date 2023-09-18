@@ -172,6 +172,21 @@ int main() {
         //Question : que faut-il modifier pour que votre programme détermine le nombre le
         //plus petit de la série (il faut créer un variable plusPetit et changer le signe ­> par un <)      
       case 10 :
+        int nombre;
+        float somme=0;
+        printf("\n\rChoisir un nombre :");
+        scanf("%d", &nombre);
+    
+        for(int i=1; i<=nombre;i++){
+            if(i< nombre){
+                printf("%d/%d + ", i, i+1);
+            }else{
+                printf("%d/%d ", i, i+1);
+            }
+            somme += (float)i/(i+1);
+        }
+        printf("= %f", somme);
+        printf("\n\rLa somme de la serie est : %f", somme);
         break;
       
     }
