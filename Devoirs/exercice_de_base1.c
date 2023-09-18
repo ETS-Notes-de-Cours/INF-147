@@ -2,6 +2,8 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
+
 
 int exercice = 1;
 
@@ -47,6 +49,15 @@ int main() {
         break;
       
       case 3 :
+          int usrAge;
+          printf("Quel age as-tu?");
+          scanf("%d", &usrAge);
+
+          if(usrAge>=18){
+              printf("%d ans, donc tu est un adulte", usrAge);
+          }else{
+              printf("%d ans, donc tu n'est qu'un enfant", usrAge);
+          }
         break;
       
       case 4 :
