@@ -1,3 +1,5 @@
+//Chaque case correspond à un exercice 
+
 #include <stdio.h>
 #include <string.h>
 
