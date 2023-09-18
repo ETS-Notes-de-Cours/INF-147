@@ -157,6 +157,16 @@ int main() {
         break;
       
       case 9 :
+        int nombre, plusGrand = 0;
+        printf("Entrez une série de nombres (terminez avec -1) :\n");
+        do {
+            scanf("%d", &nombre);
+            if (nombre != -1 && nombre > plusGrand) {
+                plusGrand = nombre;
+            }
+        } while (nombre != -1);
+        
+        printf("Le nombre le plus grand dans la série est : %d\n", plusGrand);
         break;
       
       case 10 :
