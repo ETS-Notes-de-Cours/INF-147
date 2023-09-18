@@ -145,6 +145,15 @@ int main() {
         break;
       
       case 8 :
+        int nombre, somme = 0;
+        printf("Entrez une série de nombres (terminez avec -1) :\n");
+        do {
+            scanf("%d", &nombre);
+            if (nombre != -1 && nombre % 2 == 0) {
+                somme += nombre;
+            }
+        } while (nombre != -1);
+        printf("La somme des nombres pairs dans la série est : %d\n", somme);
         break;
       
       case 9 :
