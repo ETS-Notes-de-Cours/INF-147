@@ -168,7 +168,9 @@ int main() {
         
         printf("Le nombre le plus grand dans la série est : %d\n", plusGrand);
         break;
-      
+
+        //Question : que faut-il modifier pour que votre programme détermine le nombre le
+        //plus petit de la série (il faut créer un variable plusPetit et changer le signe ­> par un <)      
       case 10 :
         break;
       
