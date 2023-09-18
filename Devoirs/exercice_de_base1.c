@@ -133,6 +133,15 @@ int main() {
         break;
       
       case 7 :
+        int nombre, compteur = 0;
+        printf("Entrez une série de nombres (terminez avec -1) :\n\r");
+        do {
+            scanf("%d", &nombre);
+            if (nombre != -1) {
+                compteur++;
+            }
+        } while (nombre != -1);
+        printf("Le nombre de valeurs dans la série est : %d\n\r", compteur);
         break;
       
       case 8 :
