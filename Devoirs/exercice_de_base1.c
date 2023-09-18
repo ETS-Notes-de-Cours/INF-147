@@ -49,7 +49,15 @@ int main() {
         break;
       
       case 3 :
-          
+        double rayon_c, hauteur_c, volume_c;
+        printf("\n\rEntrez le rayon de la base du cylindre : ");
+        scanf("%lf", &rayon_c);
+
+        printf("\n\rEntrez la hauteur du cylindre : ");
+        scanf("%lf", &hauteur_c);
+
+        volume_c = M_PI * (rayon_c*rayon_c) * hauteur_c; //pow(rayon_c, 2) * hauteur_c;
+        printf("\n\rVoici le volume de votre cylindre : %lf", volume_c);
         break;
       
       case 4 :
