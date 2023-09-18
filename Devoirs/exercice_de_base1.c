@@ -49,6 +49,10 @@ int main() {
         break;
       
       case 3 :
+          
+        break;
+      
+      case 4 :
           int usrAge;
           printf("Quel age as-tu?");
           scanf("%d", &usrAge);
@@ -58,9 +62,6 @@ int main() {
           }else{
               printf("%d ans, donc tu n'est qu'un enfant", usrAge);
           }
-        break;
-      
-      case 4 :
         break;
       
       case 5 :
