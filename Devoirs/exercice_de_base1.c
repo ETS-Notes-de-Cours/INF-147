@@ -4,34 +4,34 @@
 #include <string.h>
 #include <math.h>
 
-int exercice = 0;
+void exo_1(void);
 
-int main() {
+int main(void) {
+    int exercice = 0;
+
     while(1){
-    
         printf("\n\r Quel exercice voulez-vous essayer? : ");
         scanf("%d",&exercice);
     
         switch(exercice){
-          case 1 :
-            int nombreDeBoites,qtyArticle=36;;
-            float poidsBoite, poidsTotal, poidsArticle;
-    
-            printf("\n\rVeuillez saisir le poids d'un article (en kilogrammes) : ");
-            scanf("%f", &poidsArticle);
-    
-            printf("\n\rVeuillez saisir le nombre de boîtes : ");
-            scanf("%d", &nombreDeBoites);
-    
-            poidsBoite = poidsArticle*qtyArticle;
-    
-            poidsTotal = poidsBoite * nombreDeBoites;
-    
-            printf("\n\rLe poids d'une boite d'articles est de %.2lf kilogrammes.\n", poidsBoite);
-            printf("\n\rLe poids total de %d boites est de %.2lf kilogrammes.\n", nombreDeBoites, poidsTotal);
-            break;
-          
-          case 2 :
+          case 1 : ;
+                float nombreDeBoites=0,qtyArticle=36;
+                float poidsBoite, poidsTotal, poidsArticle;
+
+                printf("\n\rVeuillez saisir le poids d'un article (en kilogrammes) : ");
+                scanf("%f", &poidsArticle);
+
+                printf("\n\rVeuillez saisir le nombre de boites : ");
+                scanf("%d", &nombreDeBoites);
+
+                poidsBoite = poidsArticle*qtyArticle;
+
+                poidsTotal = poidsBoite * nombreDeBoites;
+
+                printf("\n\rLe poids d'une boite d'articles est de %.2lf kilogrammes.\n", poidsBoite);
+                printf("\n\rLe poids total de %d boites est de %.2lf kilogrammes.\n", nombreDeBoites, poidsTotal);
+          break;
+          case 2 : ;
             #define pourcent_tax 0.14975
               
             float pProduit, pAvantTaxe, Taxe, Total;
@@ -52,7 +52,7 @@ int main() {
             printf("\n\rLe prix total est : %f ", Total);
             break;
           
-          case 3 :
+          case 3 : ;
             double rayon_c, hauteur_c, volume_c;
             printf("\n\rEntrez le rayon de la base du cylindre : ");
             scanf("%lf", &rayon_c);
@@ -64,7 +64,7 @@ int main() {
             printf("\n\rVoici le volume de votre cylindre : %lf m^3", volume_c);
             break;
           
-          case 4 :
+          case 4 : ;
               int usrAge;
               printf("Quel age as-tu? : ");
               scanf("%d", &usrAge);
@@ -76,7 +76,7 @@ int main() {
               }
             break;
           
-          case 5 :
+          case 5 : ;
             long int durreeSecondes;
             printf(" Choisissez une duree en secondes : ");
             scanf("%ld", &durreeSecondes);
@@ -89,7 +89,7 @@ int main() {
             printf("\n\r Vous avez choisi une duree de : %02ld:%02ld:%02ld", heures, minutes, secondes);
             break;
           
-          case 6 :
+          case 6 : ;
             float kgCiment, kgSable, kgGravier;
             float volumeMaximal, volumeCiment, volumeSable, volumeGravier;
     
@@ -136,33 +136,33 @@ int main() {
             }
             break;
           
-          case 7 :
+          case 7 : ;
             int nombre, compteur = 0;
-            printf("Entrez une série de nombres (terminez avec -1) :\n\r");
+            printf("Entrez une serie de nombres (terminez avec -1) :\n\r");
             do {
                 scanf("%d", &nombre);
                 if (nombre != -1) {
                     compteur++;
                 }
             } while (nombre != -1);
-            printf("Le nombre de valeurs dans la série est : %d\n\r", compteur);
+            printf("Le nombre de valeurs dans la serie est : %d\n\r", compteur);
             break;
           
-          case 8 :
+          case 8 : ;
             int nb, somme = 0;
-            printf("Entrez une série de nombres (terminez avec -1) :\n");
+            printf("Entrez une serie de nombres (terminez avec -1) :\n");
             do {
                 scanf("%d", &nb);
                 if (nb != -1 && nb % 2 == 0) {
                     somme += nb;
                 }
             } while (nb != -1);
-            printf("La somme des nombres pairs dans la série est : %d\n", somme);
+            printf("La somme des nombres pairs dans la serie est : %d\n", somme);
             break;
           
-          case 9 :
+          case 9 : ;
             int nbr, plusGrand = 0;
-            printf("Entrez une série de nombres (terminez avec -1) :\n");
+            printf("Entrez une serie de nombres (terminez avec -1) :\n");
             do {
                 scanf("%d", &nbr);
                 if (nbr != -1 && nbr > plusGrand) {
@@ -170,12 +170,12 @@ int main() {
                 }
             } while (nbr != -1);
             
-            printf("Le nombre le plus grand dans la série est : %d\n", plusGrand);
+            printf("Le nombre le plus grand dans la serie est : %d\n", plusGrand);
             break;
     
             //Question : que faut-il modifier pour que votre programme détermine le nombre le
             //plus petit de la série (il faut créer un variable plusPetit et changer le signe ­> par un <)      
-          case 10 :
+          case 10 : ;
             int nbre;
             float sum=0;
             printf("\n\rChoisir un nombre :");
